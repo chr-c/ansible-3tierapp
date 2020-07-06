@@ -8,7 +8,7 @@
     - app_servers
 
   tasks:
-
+    - include_vars: global_vars/vars.yml
     - name: Install Tomcat package(s)
       package:
         name: "{{ app_server_packages }}"

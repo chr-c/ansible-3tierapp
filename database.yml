@@ -6,9 +6,9 @@
   tags:
     - database_servers
 
+
   tasks:
-
-
+    - include_vars: global_vars/vars.yml
     - name: Install Postgres packages
       package:
         name: "{{ __package }}"

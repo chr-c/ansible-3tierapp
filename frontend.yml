@@ -8,7 +8,7 @@
     - load_balancers
 
   tasks:
-
+    - include_vars: global_vars/vars.yml
     - name: Install load balancer packages
       package:
         name: "{{ load_balancer_packages }}"
