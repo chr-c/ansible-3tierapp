@@ -1,0 +1,4 @@
+- import_playbook: database.yml
+- import_playbook: app.yml
+- import_playbook: frontend.yml
+- import_playbook: smoke.yml
